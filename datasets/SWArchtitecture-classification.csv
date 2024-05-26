@@ -1,0 +1,230 @@
+﻿ID;Content;Work Product;Category ID;Category Description;Process Area
+26262-2018:6-7.4.1;"To avoid systematic faults in the software architectural design and in the subsequent development activities, the description of the software architectural design shall address the following characteristics supported by notations for software architectural design as listed in Table 2:
+
+a) comprehensibility;
+
+b) consistency;
+
+c) simplicity;
+
+d) verifiability;
+
+e) modularity;
+
+f) abstraction;
+
+         NOTE Abstraction can be supported by using hierarchical structures, grouping schemes or views to
+         cover static, dynamic or deployment aspects of an architectural design.
+
+g) encapsulation; and
+
+h) maintainability.";Software architectural design specification;4;Quality criteria for work products;Software Architectural Design
+26262-2018:6-7.4.10a;Safety-oriented analysis shall be carried out at the software architectural level ;Safety analysis report;1;Identification of work products;Software Architectural Design
+26262-2018:6-7.4.10b;"in accordance with ISO 26262-9:2018, Clause 8, in order to:
+
+- provide evidence for the suitability of the software to provide the specified safety-related functions
+  and properties as required by the respective ASIL;
+
+     NOTE 1 Safety-related properties include independence and freedom from interference requirements.
+
+- identify or confirm the safety-related parts of the software; and
+
+- support the specification and verify the effectiveness of the safety measures.
+
+     NOTE 2 Safety measures include safety mechanisms that have been derived from safety-oriented
+     analyses and can cover issues associated with random hardware failures as well as software faults.
+
+     NOTE 3 See Annex E for additional information about the application of safety-oriented analysis at the
+     software architectural level and the selection of appropriate safety measures.";Safety analysis report;4;Quality criteria for work products;Software Architectural Design
+26262-2018:6-7.4.11;"If the implementation of software safety requirements relies on freedom from interference or sufficient independence between software components, dependent failures and their effects shall be analysed in accordance with ISO 26262-9:2018, Clause 7.
+
+NOTE See Annex E and ISO 26262-9:2018, Annex C for additional information about the application of analyses of dependent failures at the software architectural level.";Dependent failures analysis report;1;Identification of work products;Software Architectural Design
+26262-2018:6-7.4.12;"Depending on the results of the safety-oriented analyses at the software architectural level in accordance with 7.4.10 or 7.4.11, safety mechanisms for error detection and error handling shall be applied.
+
+NOTE 1 Annex E provides guidance for deciding if safety mechanisms are required for a failure mode.
+
+NOTE 2 Safety mechanisms for error detection can include:
+
+- Range checks of input and output data;
+
+- Plausibility check (e.g. using a reference model of the desired behaviour, assertion checks, or comparing
+     signals from different sources);
+
+- Detection of data errors (e.g. error detecting codes and multiple data storage);
+
+- Monitoring of program execution by an external element such as an ASIC or another software element
+     performing a watchdog function. Monitoring can be logical or temporal monitoring or both;
+
+- Temporal monitoring of program execution;
+
+- Diverse redundancy in the design; or
+
+- Access violation control mechanisms implemented in software or hardware concerned with granting or
+     denying access to safety-related shared resources.
+
+NOTE 3 Safety mechanisms for error handling can include:
+
+- Deactivation in order to achieve and maintain a safe state;
+
+- Static recovery mechanism (e.g. recovery blocks, backward recovery, forward recovery and recovery through
+     repetition);
+
+- Graceful degradation by prioritizing functions to minimize the adverse effects of potential failures on
+     functional safety;
+
+- Homogenous redundancy in the design, which focuses primarily on controlling the effects of transient faults
+     or random faults in the hardware on which a similar software is executed (e.g. temporal redundant execution
+     of software);
+
+- Diverse redundancy in the design which implies dissimilar software in each parallel path and focuses
+     primarily on the prevention or control of systematic faults in the software;
+
+- Correcting codes for data; or
+
+- Access permission management implemented in software or hardware concerned with granting or denying
+     access to safety-related shared resources.
+
+NOTE 4 The software safety mechanisms (including general robustness mechanisms) can be reviewed at the system level to analyse the potential impact on the system behaviour and the consistency with the technical safety requirements.";Software architectural design specification;1;Identification of work products;Software Architectural Design
+26262-2018:6-7.4.13;"An upper estimation of required resources for the embedded software shall be made, including:
+
+a) the execution time;
+
+b) the storage space; and
+
+     EXAMPLE RAM for stacks and heaps, ROM for program and non-volatile data.
+
+c) the communication resources.";Software architectural design specification;2;Requirements on the content of work products;Software Architectural Design
+26262-2018:6-7.4.14a;"The software architectural design shall be verified in accordance with ISO 26262-8:2018,
+Clause 9";Software architectural design specification;9;Requirements on work product lifecycles (review needed? Confirmation / approval needed);Software Architectural Design
+26262-2018:6-7.4.14b;" and by using the software architectural design verification methods listed in Table 4 to provide evidence that the following objectives are achieved:
+
+a) the software architectural design is suitable to satisfy the software requirements with the
+     required ASIL;
+
+b) the review or investigation of the software architectural design provides evidence for the suitability
+   of the design to satisfy the software requirements with the required ASIL;
+
+c) compatibility with the target environment; and
+
+     NOTE Target environment is the environment in which the software is executed. This can include the
+     operating system and the basic software, in addition to the target hardware and its resources as specified
+     in 7.4.13.
+
+d) adherence to design guidelines.";Software architectural design specification;4;Quality criteria for work products;Software Architectural Design
+26262-2018:6-7.4.2;"During the development of the software architectural design, the following shall be considered:
+
+a) the verifiability of the software architectural design;
+
+         NOTE This implies bi-directional traceability between the software architectural design and the
+         software safety requirements.
+
+b) the suitability for configurable software;
+
+c) the feasibility for the design and implementation of the software units;
+
+d) the testability of the software architecture during software integration testing; and
+
+e) the maintainability of the software architectural design.";Software architectural design specification;4;Quality criteria for work products;Software Architectural Design
+26262-2018:6-7.4.3;"In order to avoid systematic faults, the software architectural design shall exhibit the following characteristics by use of the principles listed in Table 3:
+
+a) comprehensibility;
+
+b) consistency;
+
+c) simplicity;
+
+d) verifiability;
+
+e) modularity;
+
+f) encapsulation; and
+
+g) maintainability.";Software architectural design specification;4;Quality criteria for work products;Software Architectural Design
+26262-2018:6-7.4.4;The software architectural design shall be developed down to the level where the software units are identified.;Software architectural design specification;2;Requirements on the content of work products;Software Architectural Design
+26262-2018:6-7.4.5;"The software architectural design shall describe:
+
+a) the static design aspects of the software architectural elements; and
+
+     NOTE 1 Static design aspects address:
+
+     - the software structure including its hierarchical levels;
+
+     - the data types and their characteristics;
+
+     - the external interfaces of the software components;
+
+     - the external interfaces of the embedded software;
+
+     - the global variables; and
+
+     - the constraints including the scope of the architecture and external dependencies.
+
+     NOTE 2 In the case of model-based development, modelling the structure can be an inherent part of the
+     overall modelling activities. The structure modelled can be dependent on the selected modelling language.
+
+b) the dynamic design aspects of the software architectural elements.
+
+     NOTE 3 Dynamic design aspects address:
+
+     - the functional chain of events and behaviour;
+
+     - the logical sequence of data processing;
+
+     - the control flow and concurrency of processes;
+
+     - the data flow through interfaces and global variables; and
+
+     - the temporal constraints.
+
+NOTE 4 To determine the dynamic behaviour (e.g. of tasks, time slices and interrupts) the different operating states (e.g. power-up, shut-down, normal operation, calibration and diagnosis) are considered.
+
+NOTE 5 To describe the dynamic behaviour (e.g. of tasks, time slices and interrupts), the communication relationships and their allocation to the system hardware (e.g. CPU and communication channels) are specified.";Software architectural design specification;2;Requirements on the content of work products;Software Architectural Design
+26262-2018:6-7.4.6;"The software safety requirements shall be hierarchically allocated to the software components down to software units. As a result, each software component shall be developed in compliance with the highest ASIL of any of the requirements allocated to it.
+
+NOTE During this process of design development and requirement allocation, splitting or further refinement of software safety requirements in accordance with Clause 6 can be necessary.";Software architectural design specification;3;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+26262-2018:6-7.4.7;"If a pre-existing software architectural element is used without modifications in order to meet the assigned safety requirements without being developed according to the ISO 26262 series of standards,
+then it shall be qualified in accordance with ISO 26262-8:2018, Clause 12.
+
+NOTE 1 The use of qualified software components does not affect the applicability of Clauses 10 and 11.
+However, some activities described in Clauses 8 and 9 can be omitted.
+
+NOTE 2 The suitability for reuse of software elements developed according to the ISO 26262 series of standards is performed during the verification of the software architectural design.";Software architectural design specification;4;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+26262-2018:6-7.4.8;"If the embedded software has to implement software components of different ASILs, or safety-
+related and non-safety-related software components, then all of the embedded software shall be treated in accordance with the highest ASIL, unless the software components meet the criteria for coexistence in accordance with ISO 26262-9:2018, Clause 6.";Software architectural design specification;3;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+26262-2018:6-7.4.9;"If software partitioning (see Annex D) is used to implement freedom from interference between software components it shall be ensured that:
+
+a) the shared resources are used in such a way that freedom from interference of software partitions
+     is ensured;
+     NOTE 1 Tasks within a software partition are not free from interference among each other.
+
+     NOTE 2 One software partition cannot change the code or data of another software partition nor
+     command non-shared resources of other software partitions.
+
+     NOTE 3 The service received from shared resources by one software partition cannot be affected by
+     another software partition. This includes the performance of the resources concerned, as well as the rate,
+     latency, jitter and duration of scheduled access to the resource.
+
+b) the software partitioning is supported by dedicated hardware features or equivalent means (this
+   requirement applies to ASIL D, in accordance with 4.4);
+
+     EXAMPLE Hardware feature such as a memory protection unit.
+
+c) the element of the software that implements the software partitioning is developed in compliance
+     with the highest ASIL assigned to any requirement of the software partitions; and
+
+     NOTE 4 In general the operating system provides or supports software partitioning.
+
+d) evidence for the effectiveness of the software partitioning is generated during software integration
+   and verification (in accordance with Clause 10).";Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP1a;Develop software architectural design. ;Software architectural design specification;1;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP1b;Develop and document the software architectural design that specifies the elements of the software with respect to functional and non-functional software requirements.  NOTE 1: The software is decomposed into elements across appropriate hierarchical levels down to the software components (the lowest level elements of the software architectural design) that are described in the detailed design.;Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP2;Allocate software requirements. Allocate the software requirements to the elements of the software architectural design. ;Software architectural design specification;3;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP3;Define interfaces of software elements. Identify, develop and document the interfaces of each software element. ;Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP4a;Describe dynamic behavior. ;Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP4b;Evaluate and document the timing and dynamic interaction of software elements to meet the required dynamic behavior of the system.  NOTE 2: Dynamic behavior is determined by operating modes (e.g. start-up, shutdown, normal mode, calibration, diagnosis, etc.), processes and process intercommunication, tasks, threads, time slices, interrupts, etc. NOTE 3: During evaluation of the dynamic behavior the target platform and potential loads on the target should be considered.;Software architectural design specification;4;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP5;Define resource consumption objectives. Determine and document the resource consumption objectives for all relevant elements of the software architectural design on the appropriate hierarchical level.  NOTE 4: Resource consumption is typically determined for resources like Memory (ROM, RAM, external /internal EEPROM or Data Flash), CPU load, etc.;Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP6;Evaluate alternative software architectures. Define evaluation criteria for the architecture. Evaluate alternative software architectures according to the defined criteria. Record the rationale for the chosen software architecture.  NOTE 5: Evaluation criteria may include quality characteristics (modularity, maintainability, expandability, scalability, reliability, security realization and usability) and results of make-buy-reuse analysis.;Software architectural design specification;2;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP7;Establish bidirectional traceability. Establish bidirectional traceability between software requirements and elements of the software architectural design.  NOTE 6: Bidirectional traceability covers allocation of software requirements to the elements of the software architectural design. NOTE 7: Bidirectional traceability supports coverage, consistency and impact analysis.;Software architectural design specification;3;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP8a;Ensure consistency. ;Software architectural design specification;9;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP8b;Ensure consistency between software requirements and the software architectural design.  NOTE 8: Consistency is supported by bidirectional traceability and can be demonstrated by review records.;Software architectural design specification;4;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design
+SWE.2.BP9;Communicate agreed software architectural design. Communicate the agreed software architectural design and updates to software architectural design to all relevant parties. ;Software architectural design specification;10;"Requirements on properties or attributes of work products (e.g. ""trace_from_sw_requirements"")";Software Architectural Design

@@ -1,0 +1,135 @@
+{
+    "Specification of software safety requirements": {
+        "Dependent failures analysis report": {
+            "WorkProductName": "Dependent Failures Analysis Report",
+            "ChecklistItem1": {
+                "content": "Perform an analysis of dependent failures and their effects according to ISO 26262-9:2018, Clause 7.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.11",
+                    "ISO 26262-9:2018, Clause 7"
+                ]
+            },
+            "ChecklistItem2": {
+                "content": "Document the findings and outcomes of the dependent failures analysis.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.11"
+                ]
+            },
+            "ChecklistItem3": {
+                "content": "Include details on how software safety requirements rely on freedom from interference or sufficient independence between software components.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.11"
+                ]
+            },
+            "ChecklistItem4": {
+                "content": "Ensure compliance with the guidelines provided in Annex E and ISO 26262-9:2018, Annex C regarding analyses of dependent failures at the software architectural level.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.11"
+                ]
+            },
+            "ChecklistItem5": {
+                "content": "Implement a process to review and update the dependent failures analysis report regularly to reflect any changes or updates in the software safety requirements.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.11"
+                ]
+            }
+        },
+        "Safety analysis report": {
+            "WorkProductName": "Safety Analysis Report",
+            "ChecklistItem1": {
+                "content": "Conduct safety-oriented analysis at the software architectural level as per ISO 26262-9:2018, Clause 8.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.10b"
+                ]
+            },
+            "ChecklistItem2": {
+                "content": "Provide evidence of the software's suitability to provide specified safety-related functions and properties for the respective ASIL.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.10b"
+                ]
+            },
+            "ChecklistItem3": {
+                "content": "Identify or confirm the safety-related parts of the software.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.10b"
+                ]
+            },
+            "ChecklistItem4": {
+                "content": "Support the specification and verify the effectiveness of safety measures, including safety mechanisms derived from safety-oriented analyses.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.10b"
+                ]
+            },
+            "ChecklistItem5": {
+                "content": "Refer to Annex E for additional guidance on safety-oriented analysis at the software architectural level and selection of appropriate safety measures.",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.10b"
+                ]
+            }
+        },
+        "Software architectural design specification": {
+            "WorkProductName": "Software architectural design specification",
+            "ChecklistItem1": {
+                "content": "Ensure the software architectural design addresses characteristics such as comprehensibility, consistency, simplicity, verifiability, modularity, abstraction, encapsulation, and maintainability as per ISO 26262-2018:6-7.4.1",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.1"
+                ]
+            },
+            "ChecklistItem2": {
+                "content": "Apply safety mechanisms for error detection and error handling based on safety-oriented analyses at the software architectural level in accordance with ISO 26262-2018:6-7.4.12",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.12"
+                ]
+            },
+            "ChecklistItem3": {
+                "content": "Estimate required resources for the embedded software including execution time, storage space, and communication resources as per ISO 26262-2018:6-7.4.13",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.13"
+                ]
+            },
+            "ChecklistItem4": {
+                "content": "Verify the software architectural design in accordance with ISO 26262-8:2018, Clause 9 to ensure it meets specified objectives and design guidelines as per ISO 26262-2018:6-7.4.14a and 6-7.4.14b",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.14a",
+                    "26262-2018:6-7.4.14b"
+                ]
+            },
+            "ChecklistItem5": {
+                "content": "Consider factors such as verifiability, suitability for configurable software, feasibility, testability, and maintainability during the development of the software architectural design as per ISO 26262-2018:6-7.4.2",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.2"
+                ]
+            },
+            "ChecklistItem6": {
+                "content": "Ensure the software architectural design exhibits characteristics like comprehensibility, consistency, simplicity, verifiability, modularity, encapsulation, and maintainability based on the principles listed in ISO 26262-2018:6-7.4.3",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.3"
+                ]
+            },
+            "ChecklistItem7": {
+                "content": "Develop the software architectural design down to the level where software units are identified as per ISO 26262-2018:6-7.4.4",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.4"
+                ]
+            },
+            "ChecklistItem8": {
+                "content": "Describe the static and dynamic design aspects of the software architectural elements including software structure, data types, external interfaces, global variables, and dynamic behaviors as per ISO 26262-2018:6-7.4.5",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.5"
+                ]
+            },
+            "ChecklistItem9": {
+                "content": "Allocate software safety requirements hierarchically to software components down to software units and ensure compliance with the highest ASIL of any allocated requirement as per ISO 26262-2018:6-7.4.6",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.6"
+                ]
+            },
+            "ChecklistItem10": {
+                "content": "Qualify pre-existing software architectural elements used for safety requirements in accordance with ISO 26262-8:2018, Clause 12 if not developed following ISO 26262 series of standards as per ISO 26262-2018:6-7.4.7",
+                "IDsUsed": [
+                    "26262-2018:6-7.4.7"
+                ]
+            }
+        }
+    }
+}
